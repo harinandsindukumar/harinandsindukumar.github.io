@@ -16,7 +16,7 @@ if ! git remote get-url origin &> /dev/null
 then
     echo "Error: No remote repository configured"
     echo "Please create a GitHub repository named 'harinand-sindukumar.github.io'"
-    echo "Then run: git remote add origin https://github.com/YOUR_USERNAME/harinand-sindukumar.github.io.git"
+    echo "Then run: git remote add origin https://github.com/harinandsindukumar/harinandsindukumar.github.io.git"
     exit 1
 fi
 
@@ -38,5 +38,5 @@ git push origin gh-pages
 
 echo ""
 echo "Deployment complete!"
-echo "Your website will be available at: https://harinand-sindukumar.github.io"
+echo "Your website will be available at: https://harinandsindukumar.netlify.app"
 echo "Note: It may take a few minutes for changes to appear live."
