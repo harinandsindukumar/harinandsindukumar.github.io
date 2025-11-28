@@ -26,16 +26,15 @@ if %errorlevel% equ 0 (
     echo 3. Under "Source", select "gh-pages" branch
     echo 4. Click "Save"
     echo.
-    echo Custom Domain Setup:
-    echo 1. In the same "Pages" section, find "Custom domain"
-    echo 2. Enter: harinandsindukumar.work.gd
-    echo 3. Click "Save"
-    echo.
-    echo Your website will be available at: https://harinandsindukumar.work.gd
+    echo Your website will be available at: https://harinandsindukumar.github.io/harinandsindukumar.github.io
 ) else (
     echo.
     echo There was an error pushing to GitHub.
     echo Please make sure you've created the repository and try again.
 )
+
+echo.
+echo Note: Your GitHub username is now harinandsindukumar
+echo Repository URL: https://github.com/harinandsindukumar/harinandsindukumar.github.io
 
 pause
