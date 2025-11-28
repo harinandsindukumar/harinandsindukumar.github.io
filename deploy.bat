@@ -39,6 +39,6 @@ git push origin gh-pages
 
 echo.
 echo Deployment complete!
-echo Your website will be available at: https://harinandsindukumar.netlify.app
+echo Your website will be available at: https://harinandsindukumar.github.io
 echo Note: It may take a few minutes for changes to appear live.
 pause

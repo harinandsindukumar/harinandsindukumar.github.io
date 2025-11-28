@@ -26,7 +26,7 @@ if %errorlevel% equ 0 (
     echo 3. Under "Source", select "gh-pages" branch
     echo 4. Click "Save"
     echo.
-    echo Your website will be available at: https://harinandsindukumar.netlify.app
+    echo Your website will be available at: https://harinandsindukumar.github.io
 ) else (
     echo.
     echo There was an error pushing to GitHub.
@@ -36,8 +36,5 @@ if %errorlevel% equ 0 (
 echo.
 echo Note: Your GitHub username is now harinandsindukumar
 echo Repository URL: https://github.com/harinandsindukumar/harinandsindukumar.github.io
-
-echo.
-echo NOTE: Website is now deployed to Netlify at: https://harinandsindukumar.netlify.app
 
 pause
