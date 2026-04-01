@@ -1,0 +1,101 @@
+.logoloop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.logoloop__track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  will-change: transform;
+}
+
+.logoloop--vertical .logoloop__track {
+  flex-direction: column;
+}
+
+.logoloop--horizontal .logoloop__track {
+  flex-direction: row;
+}
+
+.logoloop__list {
+  display: flex;
+  gap: var(--logoloop-gap);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logoloop--vertical .logoloop__list {
+  flex-direction: column;
+}
+
+.logoloop--horizontal .logoloop__list {
+  flex-direction: row;
+}
+
+.logoloop__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logoloop__node {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--logoloop-logoHeight);
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+.logoloop__node svg,
+.logoloop__node img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.logoloop__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoloop--scale-hover .logoloop__node:hover {
+  transform: scale(1.1);
+}
+
+.logoloop--fade::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    var(--logoloop-fadeColor, #ffffff) 0%,
+    transparent 20%,
+    transparent 80%,
+    var(--logoloop-fadeColor, #ffffff) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.logoloop--vertical.logoloop--fade::before {
+  background: linear-gradient(
+    to bottom,
+    var(--logoloop-fadeColor, #ffffff) 0%,
+    transparent 20%,
+    transparent 80%,
+    var(--logoloop-fadeColor, #ffffff) 100%
+  );
+}
